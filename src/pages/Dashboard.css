@@ -3,57 +3,57 @@
   grid-template-columns: 1fr auto;
   gap: 40px;
   align-items: center;
-  background: linear-gradient(135deg, #0D2440 0%, #112850 50%, #0D3A5C 100%);
-  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border);
   border-radius: 24px;
   padding: 48px;
   margin-bottom: 48px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 32px rgba(27, 42, 74, 0.08);
 }
-
 .hero-section::before {
   content: '';
   position: absolute;
-  width: 300px; height: 300px;
+  width: 320px; height: 320px;
   border-radius: 50%;
-  background: rgba(122, 171, 207, 0.06);
-  top: -100px; left: 200px;
+  background: rgba(27, 42, 74, 0.04);
+  top: -120px; right: 200px;
 }
-
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(122, 171, 207, 0.1);
-  border: 1px solid rgba(122, 171, 207, 0.2);
+  background: rgba(27, 42, 74, 0.06);
+  border: 1px solid rgba(27, 42, 74, 0.15);
   border-radius: 20px;
   padding: 6px 14px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--accent-primary);
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 .badge-dot {
   width: 8px; height: 8px;
   border-radius: 50%;
-  background: #4CAF82;
+  background: #2E7D52;
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
 }
-
 .hero-title {
   font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 16px;
+  color: var(--text-primary);
 }
-.hero-name { color: var(--accent-cyan); }
-
+.hero-name {
+  color: var(--accent-blue);
+}
 .hero-desc {
   color: var(--text-secondary);
   font-size: 15px;
@@ -62,23 +62,21 @@
   margin-bottom: 28px;
 }
 .hero-desc strong { color: var(--text-primary); }
-
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-
 .score-card {
-  background: linear-gradient(135deg, #0F3460, #1A5276);
-  border: 1px solid rgba(122, 171, 207, 0.3);
+  background: var(--bg-card);
   border-radius: 20px;
   padding: 36px 44px;
   text-align: center;
   min-width: 180px;
+  box-shadow: 0 8px 32px rgba(27, 42, 74, 0.2);
 }
 .score-icon { font-size: 48px; margin-bottom: 12px; }
 .score-num {
   font-family: 'Nunito', sans-serif;
   font-size: 52px;
   font-weight: 800;
-  color: #fff;
+  color: #F5F0E8;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -86,24 +84,21 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: var(--accent-primary);
+  color: #A8B8D8;
 }
-
 .section-header {
   margin-bottom: 24px;
 }
-.section-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+.section-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; color: var(--text-primary); }
 .section-header p { color: var(--text-muted); font-size: 14px; }
-
 .directions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 .direction-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border);
   border-radius: 20px;
   padding: 32px;
   text-decoration: none;
@@ -111,44 +106,33 @@
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 12px rgba(27, 42, 74, 0.06);
 }
-.direction-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--card-color);
-  opacity: 0;
-  transition: opacity 0.3s;
-  border-radius: 20px;
-}
-.direction-card:hover::before { opacity: 0.15; }
 .direction-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.12);
 }
-
 .direction-card > * { position: relative; }
-
 .dir-icon { font-size: 40px; margin-bottom: 16px; }
-.direction-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+.direction-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--text-primary); }
 .direction-card p { color: var(--text-muted); font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
-
 .dir-arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 36px; height: 36px;
-  background: rgba(122, 171, 207, 0.1);
+  background: rgba(27, 42, 74, 0.08);
   border-radius: 50%;
   font-size: 16px;
-  color: var(--accent-cyan);
+  color: var(--accent-blue);
   transition: all 0.2s;
 }
 .direction-card:hover .dir-arrow {
-  background: rgba(122, 171, 207, 0.2);
+  background: var(--bg-card);
+  color: #F5F0E8;
   transform: translateX(4px);
 }
-
 @media (max-width: 900px) {
   .hero-section { grid-template-columns: 1fr; }
   .hero-right { display: flex; justify-content: center; }
