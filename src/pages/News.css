@@ -2,13 +2,13 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.news-header h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; color: var(--text-primary); }
-.news-header p { color: var(--text-muted); }
+.news-header h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; color: #F5F0E8; }
+.news-header p { color: #8A9BB8; }
 .news-loading { display: flex; justify-content: center; padding: 60px 0; }
 .spinner {
   width: 40px; height: 40px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent-blue);
+  border: 3px solid rgba(27, 42, 74, 0.15);
+  border-top-color: #2A4A8A;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -20,7 +20,7 @@
 }
 .news-card {
   background: #fff;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid rgba(27, 42, 74, 0.12);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s;
@@ -28,7 +28,7 @@
   box-shadow: 0 2px 12px rgba(27, 42, 74, 0.06);
 }
 .news-card:hover {
-  border-color: var(--border-hover);
+  border-color: rgba(27, 42, 74, 0.25);
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(27, 42, 74, 0.12);
 }
@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-secondary);
+  background: #F5F0E8;
   font-size: 48px;
 }
 .news-badge {
@@ -58,11 +58,11 @@
   border-radius: 20px;
   font-size: 11px;
   font-weight: 700;
-  background: var(--bg-card);
+  background: #1B2A4A;
   color: #F5F0E8;
   letter-spacing: 0.5px;
 }
 .news-body { padding: 18px; }
-.news-date { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
-.news-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; color: var(--text-primary); }
-.news-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+.news-date { font-size: 12px; color: #8A9BB8; margin-bottom: 8px; }
+.news-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; line-height: 1.4; color: #1B2A4A; }
+.news-desc { font-size: 13px; color: #3A4A6A; line-height: 1.6; }
