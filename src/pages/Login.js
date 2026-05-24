@@ -23,7 +23,7 @@ export default function Login() {
       <div className="auth-bg" />
       <div className="auth-card">
         <div className="auth-logo">
-          <span style={{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'36px',height:'36px',background:'linear-gradient(135deg,#1a6fd4,#0a3d8f)',borderRadius:'8px',marginRight:'8px',fontSize:'20px',fontWeight:'900',color:'white',letterSpacing:'-1px'}}>X</span>
+          <img src="/logo.png" alt="StemX" style={{height:'48px',marginRight:'10px'}} />
           <div>
             <p className="auth-logo-title">StemXuz</p>
             <p className="auth-logo-sub">Aspiring scholars</p>

@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <Link to="/dashboard" className="navbar-logo" onClick={closeMenu}>
-          <span style={{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'36px',height:'36px',background:'linear-gradient(135deg,#1a6fd4,#0a3d8f)',borderRadius:'8px',marginRight:'8px',fontSize:'20px',fontWeight:'900',color:'white',letterSpacing:'-1px'}}>X</span>
+          <img src="/logo.png" alt="StemX" style={{height:'40px',marginRight:'8px'}} />
           <div>
             <span className="logo-text">StemXuz</span>
             <span className="logo-sub">Aspiring scholars</span>
@@ -66,4 +66,4 @@ export default function Navbar() {
       </div>
     </nav>
   )
-}
+}s
