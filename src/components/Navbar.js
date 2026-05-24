@@ -2,32 +2,27 @@ import { useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import './Navbar.css'
-
 export default function Navbar() {
   const { profile, logout } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
-
   const handleLogout = async () => {
     await logout()
     navigate('/login')
   }
-
   const isActive = (path) => location.pathname === path
   const closeMenu = () => setMenuOpen(false)
-
   return (
     <nav className="navbar">
       <div className="navbar-inner">
         <Link to="/dashboard" className="navbar-logo" onClick={closeMenu}>
-           <span style={{fontSize:'28px', fontWeight:'900', color:'#1B2A4A', background:'#B3CFE5', borderRadius:'6px', padding:'2px 10px',
+          <span style={{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'36px',height:'36px',background:'linear-gradient(135deg,#1a6fd4,#0a3d8f)',borderRadius:'8px',marginRight:'8px',fontSize:'20px',fontWeight:'900',color:'white',letterSpacing:'-1px'}}>X</span>
           <div>
             <span className="logo-text">StemXuz</span>
             <span className="logo-sub">Aspiring scholars</span>
           </div>
         </Link>
-
         <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           <Link to="/iqtisodiyot" className={`nav-link ${isActive('/iqtisodiyot') ? 'active' : ''}`} onClick={closeMenu}>
             💼 Iqtisodiyot
@@ -48,7 +43,6 @@ export default function Navbar() {
             ⇠ Chiqish
           </button>
         </div>
-
         <div className="navbar-right desktop-only">
           <Link to="/liderlar" className="score-badge">
             🏅 {profile?.total_score || 0} BALL
@@ -58,7 +52,6 @@ export default function Navbar() {
           </Link>
           <button onClick={handleLogout} className="logout-btn" title="Chiqish">⇠</button>
         </div>
-
         <div className="navbar-right-mobile">
           <Link to="/liderlar" className="score-badge">
             🏅 {profile?.total_score || 0} BALL
@@ -67,7 +60,6 @@ export default function Navbar() {
             {profile?.full_name?.charAt(0).toUpperCase() || 'U'}
           </Link>
         </div>
-
         <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? '✕' : '☰'}
         </button>
