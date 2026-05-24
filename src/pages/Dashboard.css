@@ -3,14 +3,14 @@
   grid-template-columns: 1fr auto;
   gap: 40px;
   align-items: center;
-  background: var(--bg-secondary);
-  border: 1.5px solid var(--border);
+  background: #F5F0E8;
+  border: 1.5px solid rgba(27, 42, 74, 0.12);
   border-radius: 24px;
   padding: 48px;
   margin-bottom: 48px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 32px rgba(27, 42, 74, 0.08);
+  box-shadow: 0 4px 32px rgba(27, 42, 74, 0.15);
 }
 .hero-section::before {
   content: '';
@@ -31,7 +31,7 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--text-secondary);
+  color: #3A4A6A;
   margin-bottom: 20px;
 }
 .badge-dot {
@@ -49,27 +49,25 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 16px;
-  color: var(--text-primary);
+  color: #1B2A4A;
 }
-.hero-name {
-  color: var(--accent-blue);
-}
+.hero-name { color: #2A4A8A; }
 .hero-desc {
-  color: var(--text-secondary);
+  color: #3A4A6A;
   font-size: 15px;
   line-height: 1.7;
   max-width: 480px;
   margin-bottom: 28px;
 }
-.hero-desc strong { color: var(--text-primary); }
+.hero-desc strong { color: #1B2A4A; }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
 .score-card {
-  background: var(--bg-card);
+  background: #1B2A4A;
   border-radius: 20px;
   padding: 36px 44px;
   text-align: center;
   min-width: 180px;
-  box-shadow: 0 8px 32px rgba(27, 42, 74, 0.2);
+  box-shadow: 0 8px 32px rgba(27, 42, 74, 0.3);
 }
 .score-icon { font-size: 48px; margin-bottom: 12px; }
 .score-num {
@@ -86,37 +84,34 @@
   letter-spacing: 2px;
   color: #A8B8D8;
 }
-.section-header {
-  margin-bottom: 24px;
-}
-.section-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; color: var(--text-primary); }
-.section-header p { color: var(--text-muted); font-size: 14px; }
+.section-header { margin-bottom: 24px; }
+.section-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; color: #F5F0E8; }
+.section-header p { color: #8A9BB8; font-size: 14px; }
 .directions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .direction-card {
-  background: var(--bg-secondary);
-  border: 1.5px solid var(--border);
+  background: #F5F0E8;
+  border: 1.5px solid rgba(27, 42, 74, 0.12);
   border-radius: 20px;
   padding: 32px;
   text-decoration: none;
-  color: var(--text-primary);
+  color: #1B2A4A;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(27, 42, 74, 0.06);
+  box-shadow: 0 2px 12px rgba(27, 42, 74, 0.08);
 }
 .direction-card:hover {
-  border-color: var(--border-hover);
+  border-color: rgba(27, 42, 74, 0.25);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.12);
+  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.15);
 }
-.direction-card > * { position: relative; }
 .dir-icon { font-size: 40px; margin-bottom: 16px; }
-.direction-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--text-primary); }
-.direction-card p { color: var(--text-muted); font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
+.direction-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: #1B2A4A; }
+.direction-card p { color: #5A6A8A; font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
 .dir-arrow {
   display: inline-flex;
   align-items: center;
@@ -125,11 +120,11 @@
   background: rgba(27, 42, 74, 0.08);
   border-radius: 50%;
   font-size: 16px;
-  color: var(--accent-blue);
+  color: #2A4A8A;
   transition: all 0.2s;
 }
 .direction-card:hover .dir-arrow {
-  background: var(--bg-card);
+  background: #1B2A4A;
   color: #F5F0E8;
   transform: translateX(4px);
 }
