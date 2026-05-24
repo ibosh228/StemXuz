@@ -121,17 +121,23 @@
   margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar-links { display: none; }
   .navbar-links.open {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 64px; left: 0; right: 0;
-    background: var(--bg-secondary);
+    background: #0A1931;
     padding: 16px;
     border-bottom: 1px solid var(--border);
+    z-index: 99;
   }
-  .burger { display: block; }
+  .navbar-links.open .nav-link {
+    padding: 12px 16px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .burger { display: block !important; }
   .navbar-right { gap: 8px; }
 }
