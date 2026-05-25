@@ -21,48 +21,48 @@
   pointer-events: none;
 }
 .ball-1 {
-  width: 120px; height: 120px;
+  width: 130px; height: 130px;
   background: radial-gradient(circle at 35% 35%, #c8d8f0, #1B2A4A);
-  top: -40px; right: 320px;
+  top: -50px; left: 42%;
   animation: float1 6s ease-in-out infinite;
-  box-shadow: inset -8px -8px 20px rgba(0,0,0,0.3), 4px 8px 20px rgba(27,42,74,0.3);
+  box-shadow: inset -8px -8px 20px rgba(0,0,0,0.3), 4px 8px 20px rgba(27,42,74,0.25);
 }
 .ball-2 {
-  width: 80px; height: 80px;
-  background: radial-gradient(circle at 35% 35%, #e8e0d0, #9A8F82);
-  top: 20px; right: 180px;
+  width: 70px; height: 70px;
+  background: radial-gradient(circle at 35% 35%, #EDE8E0, #9A8F82);
+  top: 15px; left: 58%;
   animation: float2 7s ease-in-out infinite;
-  box-shadow: inset -6px -6px 15px rgba(0,0,0,0.2), 3px 6px 15px rgba(0,0,0,0.2);
+  box-shadow: inset -5px -5px 12px rgba(0,0,0,0.2), 3px 5px 12px rgba(0,0,0,0.15);
 }
 .ball-3 {
-  width: 160px; height: 160px;
+  width: 100px; height: 100px;
   background: radial-gradient(circle at 35% 35%, #c8d8f0, #1B2A4A);
-  bottom: -60px; right: 60px;
+  bottom: -35px; left: 48%;
   animation: float3 8s ease-in-out infinite;
-  box-shadow: inset -10px -10px 25px rgba(0,0,0,0.3), 5px 10px 25px rgba(27,42,74,0.3);
+  box-shadow: inset -8px -8px 20px rgba(0,0,0,0.3), 4px 8px 20px rgba(27,42,74,0.25);
 }
 .ball-4 {
-  width: 60px; height: 60px;
-  background: radial-gradient(circle at 35% 35%, #e8e0d0, #9A8F82);
-  bottom: 20px; right: 280px;
+  width: 55px; height: 55px;
+  background: radial-gradient(circle at 35% 35%, #EDE8E0, #9A8F82);
+  bottom: 25px; left: 62%;
   animation: float4 5s ease-in-out infinite;
-  box-shadow: inset -4px -4px 10px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.2);
+  box-shadow: inset -4px -4px 10px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.15);
 }
 @keyframes float1 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(5deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
 }
 @keyframes float2 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(-5deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
 }
 @keyframes float3 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-25px) rotate(3deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
 @keyframes float4 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(-8deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 .hero-badge {
   display: inline-flex;
@@ -177,8 +177,8 @@
   .hero-right { display: flex; justify-content: center; }
   .directions-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 28px; }
-  .ball-1 { width: 80px; height: 80px; right: 10px; top: -20px; }
-  .ball-2 { width: 50px; height: 50px; right: 100px; top: 10px; }
+  .ball-1 { width: 80px; height: 80px; left: 55%; top: -20px; }
+  .ball-2 { width: 50px; height: 50px; left: 70%; top: 10px; }
   .ball-3 { display: none; }
   .ball-4 { display: none; }
 }
