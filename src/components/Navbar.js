@@ -47,6 +47,9 @@ export default function Navbar() {
           </button>
         </div>
         <div className="navbar-right desktop-only">
+          <div className="streak-badge">
+            🔥 {profile?.streak || 0}
+          </div>
           <Link to="/liderlar" className="score-badge">
             🏅 {profile?.total_score || 0} BALL
           </Link>

@@ -176,3 +176,16 @@
     margin-left: auto;
   }
 }
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 100, 0, 0.1);
+  border: 1.5px solid rgba(255, 100, 0, 0.3);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #FF6400;
+  white-space: nowrap;
+}
